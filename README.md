@@ -1,11 +1,47 @@
-# arduino_smartvehiclesystem
-Arduino based Child safety system that uses 2 Arduino nano sense modules.
-Composed of two microcontroller (Arduino Nano 33 Sense or custom PCB hardware) modules, which are pre-programed to pair with each other.
-Integrated with a mobile app (alerts, system performance and diagnostic data, emergency phone calls or text messaging).
-Primary module may be mounted on a vehicle or infant car seat.
-When vehicle mounted, integrated into the on-board systems.
-Equipped with an eSIM (for on-board cellular connection) a small camera, an Edge TPU module (for real-time person or pet detection using Machine learning).
-PIR sensor (to detect motion),  3D accelerometer (detect crash impact), gyroscope (detect roll-over), a microphone (to initiate voice control if occupant is otherwise incapacitated), and temperature monitoring (how hot is the inside of the vehicle).
-Secondary device is meant to be attached to a key-fob or placed on a personal item such as a purse or handbag.
-Child and Pet Monitoring.
-Vehicle Accident and Roll-over monitoring.
+# Arduino Smart Vehicle System
+
+**Embedded child safety alert system**
+
+---
+
+## Description
+
+This is a hardware project using Arduino Nano modules for sensing unsafe conditions (in or around vehicles) with the goal of improving child safety. It includes sensor modules, alerts, and embedded code in C/C++.
+
+---
+
+## Key Features
+
+- Dual Arduino Nano sensor modules  
+- Sensing of environmental or positional variables relevant to child safety  
+- Potential alerts or signal outputs when unsafe conditions are detected  
+
+---
+
+## Getting Started
+
+### Hardware Requirements
+
+- 2× Arduino Nano boards  
+- Relevant sensors (e.g. motion/safety sensors—specific type depends on your setup)  
+- Wiring, power supply, possibly alert output (LED, buzzer, etc.)
+
+### Software Requirements
+
+- Arduino IDE or compatible for flashing sketches  
+- C/C++ code as per the repo  
+
+### Usage
+
+1. Connect the sensors to the appropriate pins on the Arduino Nanos  
+2. Upload the corresponding sketch(s) from the repo  
+3. Test responses under simulated “unsafe” conditions (for example movement, absence, etc.)
+
+---
+
+## Possible Enhancements
+
+- Wireless alert / remote monitoring  
+- Logging of events for later analysis  
+- Sophisticated sensor fusion (combine different types of sensors)  
+- Power efficiency or size reduction for portability  
